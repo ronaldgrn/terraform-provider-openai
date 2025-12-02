@@ -46,7 +46,7 @@ func (d *UsersDataSource) Schema(ctx context.Context, req datasource.SchemaReque
 		MarkdownDescription: "Lists all of the users in the organization.",
 
 		Attributes: map[string]schema.Attribute{
-			"users": schema.SetNestedAttribute{
+			"users": schema.ListNestedAttribute{
 				MarkdownDescription: "List of users.",
 				Computed:            true,
 				NestedObject: schema.NestedAttributeObject{

@@ -22,7 +22,7 @@ data "openai_users" "example" {
 
 ### Read-Only
 
-- `users` (Attributes Set) List of users. (see [below for nested schema](#nestedatt--users))
+- `users` (Attributes List) List of users. (see [below for nested schema](#nestedatt--users))
 
 <a id="nestedatt--users"></a>
 ### Nested Schema for `users`
